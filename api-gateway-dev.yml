@@ -11,11 +11,20 @@ spring:
 zuul:
   include-debug-header: true
   trace-request-body: true
+  prefix: /api
   routes:
-    user:
+    account-service:
       path: /account/**
-      stripPrefix: false
-      serviceId: user-service
+      serviceId: account-service
+    customer-service:
+      path: /customer/**
+      serviceId: customer-service
+    order-service:
+      path: /order/**
+      serviceId: order-service
+    product-service:
+      path: /product/**
+      serviceId: product-service
 
 eureka:
   client:
