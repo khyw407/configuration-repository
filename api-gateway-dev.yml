@@ -33,7 +33,6 @@ eureka:
     service-url:
       default-zone: http://hyunwoo-kim.iptime.org:32002/eureka/
   instance:
-    prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
     
