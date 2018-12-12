@@ -31,7 +31,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      default-zone: http://hyunwoo-kim.iptime.org:32002
+      default-zone: http://hyunwoo-kim.iptime.org:32002/eureka/
   instance:
     prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 3
