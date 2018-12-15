@@ -1,9 +1,9 @@
 server:
-  port: 32002
+  port: 8761
 
 eureka:
   instance:
-    hostname: hyunwoo-kim.iptime.org
+    hostname: localhost
     lease-expiration-duration-in-seconds: 5
     lease-renewal-interval-in-seconds: 3
   client:
