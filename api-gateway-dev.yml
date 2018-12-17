@@ -35,4 +35,3 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
-    
