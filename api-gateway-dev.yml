@@ -7,10 +7,6 @@ spring:
       enabled: true
       charset: UTF-8
       force: true
-  cloud:
-    consul:
-      host: http://consul.development.svc.cluster.local
-      port: 8500
 
 zuul:
   include-debug-header: true
