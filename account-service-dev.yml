@@ -1,12 +1,6 @@
 server:
   port: 8091
   
-spring:
-  cloud:
-    consul:
-      host: http://consul.development.svc.cluster.local
-      port: 8500
-  
 eureka:
   client:
     register-with-eureka: true
