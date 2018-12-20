@@ -1,0 +1,38 @@
+server:
+  port: 9000
+  
+spring:
+  cloud:
+    consul:
+      host: consul.development.svc.cluster.local
+      port: 8500
+      register: false
+      registerHealthCheck: false
+      healthCheckPath: metric/health
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+
+zuul:
+  include-debug-header: true
+  trace-request-body: true
+  prefix: /api
+  routes:
+    account-service:
+      path: /account/**
+      serviceId: account-service
+    customer-service:
+      path: /customer/**
+      serviceId: customer-service
+    order-service:
+      path: /order/**
+      serviceId: order-service
+    product-service:
+      path: /product/**
+      serviceId: product-service
+      
+logging:
+  level:
+    com.netflix: DEBUG

@@ -6,6 +6,7 @@ spring:
     consul:
       host: consul.development.svc.cluster.local
       port: 8500
+      healthCheckPath: metric/health
       
 logging:
   level:
