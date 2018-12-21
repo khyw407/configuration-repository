@@ -2,12 +2,16 @@ server:
   port: 8091
   
 spring:
-  cloud:
-    rabbitmq:
-      host: 192.168.0.16
-      port: 5672
-      username: guest
-      password: guest
+  rabbitmq:
+    host: 192.168.0.16
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    base-url: http://zipkin.development.svc.cluster.local:9411/
+  sleuth:
+    sampler:
+      probability: 1
   
 eureka:
   client:

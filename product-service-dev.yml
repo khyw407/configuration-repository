@@ -2,12 +2,11 @@ server:
   port: 8093
   
 spring:
-  cloud:
-    rabbitmq:
-      host: 192.168.0.16
-      port: 5672
-      username: guest
-      password: guest
+  rabbitmq:
+    host: 192.168.0.16
+    port: 5672
+    username: guest
+    password: guest
   
 eureka:
   client:
