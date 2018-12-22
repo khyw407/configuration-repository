@@ -28,7 +28,7 @@ zuul:
 
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://eureka.development.svc.cluster.local:32002/eureka/
