@@ -7,13 +7,7 @@ spring:
     port: 5672
     username: guest
     password: guest
-    listener:
-      direct:
-        retry:
-          enabled: true
-      simple:
-        retry:
-          enabled: true
+    
   zipkin:
     base-url: http://zipkin.development.svc.cluster.local:9411/
   sleuth:
