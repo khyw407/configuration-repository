@@ -7,7 +7,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-    
   zipkin:
     base-url: http://zipkin.development.svc.cluster.local:9411/
   sleuth:
