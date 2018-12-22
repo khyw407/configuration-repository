@@ -8,7 +8,7 @@ spring:
     username: guest
     password: guest
   zipkin:
-    base-url: http://zipkin.development.svc.cluster.local:9411/
+    base-url: http://zipkin.192.168.0.9.nip.io:32006/
   sleuth:
     sampler:
       probability: 1.0
