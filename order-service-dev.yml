@@ -7,6 +7,14 @@ spring:
     port: 5672
     username: guest
     password: guest
+  zipkin:
+    locator:
+      discovery:
+        enabled: true
+    base-url: http://zipkin.development.168.0.9.nip.io:32006/
+  sleuth:
+    sampler:
+      probability: 1
   
 eureka:
   client:
