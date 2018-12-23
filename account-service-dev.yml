@@ -7,11 +7,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-  zipkin:
-    baseUrl: http://zipkin.192.168.0.9.nip.io:32006/
-  sleuth:
-    sampler:
-      probability: 1.0
   
 eureka:
   client:
