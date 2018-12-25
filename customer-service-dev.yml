@@ -7,14 +7,6 @@ spring:
     port: 5672
     username: guest
     password: guest
-  zipkin:
-    discovery-client-enabled: false
-    baseUrl: http://zipkin.192.168.0.9.nip.io:32006/
-    sender:
-      type: web
-  sleuth:
-    sampler:
-      probability: 1.0
 
 eureka:
   client:
