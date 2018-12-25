@@ -8,13 +8,13 @@ spring:
     username: guest
     password: guest
   zipkin:
-    locator:
-      discovery:
-        enabled: true
-    base-url: http://zipkin.development.168.0.9.nip.io:32006/
+    discovery-client-enabled: false
+    baseUrl: http://zipkin.192.168.0.9.nip.io:32006/
+    sender:
+      type: web
   sleuth:
     sampler:
-      probability: 1
+      probability: 1.0
   
 eureka:
   client:
