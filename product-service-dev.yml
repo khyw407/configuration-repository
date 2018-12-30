@@ -22,7 +22,7 @@ eureka:
     service-url:
       defaultZone: https://eureka.development.svc.cluster.local:32002/eureka/
   instance:
-   nonSecurePortEnabled: false
+    nonSecurePortEnabled: false
     securePortEnabled: true
     securePort: 8093
     statusPageUrl: https://eureka.development.svc.cluster.local:${eureka.instance.securePort}/info
