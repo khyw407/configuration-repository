@@ -1,13 +1,5 @@
 server:
   port: 8093
-  ssl:
-    enabled: true
-    key-store: classpath:product.jks
-    key-store-password: 1q2w3e4r5t!
-    key-alias: product
-    
-security:
-  require-ssl: true
   
 spring:
   rabbitmq:
@@ -18,15 +10,11 @@ spring:
   
 eureka:
   client:
-    securePortEnabled: true
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: https://eureka.development.svc.cluster.local:32002/eureka/
+      defaultZone: http://eureka.development.svc.cluster.local:32002/eureka/
   instance:
-    nonSecurePortEnabled: false
-    securePortEnabled: true
-    securePort: 8093
-    statusPageUrl: https://eureka.development.svc.cluster.local:${eureka.instance.securePort}/info
-    healthCheckUrl: https://eureka.development.svc.cluster.local:${eureka.instance.securePort}/health
-    homePageUrl: https://eureka.development.svc.cluster.local:${eureka.instance.securePort}/
+    prefer-ip-address: true
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 5
